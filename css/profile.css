@@ -1,0 +1,163 @@
+a,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+
+    overflow: hidden;
+    background-color: #404040;
+    padding: 20px 10px;
+}
+
+svg {
+    position: fixed;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.header a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 25px;
+    border: 2px dashed white;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 18px;
+
+}
+
+@media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .header-right {
+        float: none;
+    }
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+label {
+    float: left;
+    color: white;
+    font-size: 30px;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+.username {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 25px;
+    padding: 5px 15px;
+    margin-left: 60%;
+    display: inline-block;
+}
+
+#content {
+
+    text-shadow: 5px 5px 10px black;
+    width: 40%;
+    padding: 12px 20px;
+    margin: 28px 25px;
+    margin-left: 30%;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: x-large;
+    text-align: center;
+
+}
+
+.row {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+
+}
+
+.stiker_50 {
+    width: 12%;
+    margin-top: 25px;
+    text-align: center;
+    margin-left: 42%;
+}
+
+.add_photo {
+    color: black;
+    text-shadow: 5px 5px 10px black;
+    width: 12%;
+    margin-top: 25px;
+    text-align: center;
+    margin-left: 42%;
+}
+
+.field {
+    color: black;
+    text-shadow: 5px 5px 10px black;
+    font-size: 30px;
+    margin-top: 10px;
+    display: inline-block;
+    margin-top: 25px;
+    width: 40%;
+    margin: 0px 30%;
+    margin-bottom: 20px;
+}
+
+.textfield {
+
+    height: 40px;
+    border-radius: 18px;
+    background-color: rgba(255, 255, 255, 0.75);
+    float: right;
+    display: inline-block;
+    width: 60%;
+
+}
+
+.button {
+    color: white;
+    font-size: 30px;
+    line-height: 25px;
+    border: 2px dashed white;
+    padding: 10px 25px;
+    border-radius: 18px;
+    margin: 10px;
+    background-color: #404040;
+    display: inline-block;
+    margin-top: 25px;
+    text-align: center;
+    width: 10%;
+    margin: 15px 48% 70px 42%;
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #404040;
+    color: white;
+    text-align: center;
+
+}

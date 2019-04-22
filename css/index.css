@@ -1,0 +1,166 @@
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+
+  overflow: hidden;
+  background-color: #404040;
+  padding: 20px 10px;
+}
+
+svg {
+  position: fixed;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+.header a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 25px;
+  border: 2px dashed white;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 18px;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+}
+
+#content {
+
+  height: 100%;
+  padding: 30px 50px;
+
+}
+
+
+.header-right {
+  float: right;
+}
+
+#header-title {
+  float: left;
+  color: white;
+  font-size: 30px;
+  margin-left: 70px;
+  margin-top: 10px;
+}
+
+h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 5px 5px 10px black;
+  text-align: center;
+  font-size: 36px;
+}
+
+h2 {
+  margin: 0;
+  color: white;
+  text-shadow: 5px 5px 10px black;
+  text-align: center;
+  font-size: 36px;
+}
+
+.text-holder {
+  border-radius: 32px;
+  background-color: rgba(255, 255, 255, 0.75);
+  width: 46%;
+  display: inline-block;
+  padding: 18px 8px;
+  font-size: x-large;
+  margin: 15px 15px;
+}
+
+.row {
+  display: block;
+
+}
+
+.stiker_40 {
+  width: 37%;
+}
+
+.stiker_60 {
+  width: 55%
+}
+
+.stiker_center {
+  width: 48%;
+  margin-left: 26%;
+  margin-bottom: 40px;
+}
+
+.stiker_50 {
+  width: 45%;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.icon {
+  display: inline-block;
+  position: relative;
+}
+
+.icon>img {
+  width: 125px;
+  height: 125px;
+  position: relative;
+  top: 50px;
+  left: 50px;
+
+}
+
+.button {
+  color: white;
+  font-size: 30px;
+  line-height: 25px;
+  border: 2px dashed white;
+  padding: 10px 25px;
+  border-radius: 18px;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  background-color: #404040;
+  margin-bottom: 100px;
+}
+
+  #footer {
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+    background-color: #404040;
+   color: white;
+   text-align: center;
+  
+}

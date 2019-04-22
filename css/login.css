@@ -1,0 +1,113 @@
+
+a,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+#header-title {
+  float: left;
+  color: white;
+  font-size: 30px;
+  margin-left: 70px;
+  margin-top: 10px;
+}
+
+svg {
+    position: fixed;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+h1 {
+    margin: 20px;
+    color: white;
+    text-shadow: 5px 5px 10px black;
+    text-align: center;
+    font-size: 36px;
+}
+
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+.header {
+
+    overflow: hidden;
+    background-color: #404040;
+    padding: 20px 10px;
+}
+
+.form {
+    text-shadow: 5px 5px 10px black;
+    width: 40%;
+    padding: 12px 20px;
+    margin: 28px 25px;
+    margin-left: 30%;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: x-large;
+    text-align: center;
+}
+
+.textfield {
+    width: 60%;
+    height: 50px;
+    border-radius: 18px;
+    background-color: rgba(255, 255, 255, 0.75);
+    float: right;
+}
+
+.form-buttons {
+    float: none;
+    line-height: 25px;
+    padding: 10px 25px;
+    margin: 10px;
+    height: 40px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 60px;
+}
+
+.button {
+    color: white;
+    font-size: 30px;
+    line-height: 25px;
+    border: 2px dashed white;
+    padding: 10px 25px;
+    border-radius: 18px;
+    margin: 10px;
+    background-color: #404040;
+    display: inline-block;
+    
+}
+
+.form-label {
+    color: white;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+ #footer {
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+    background-color: #404040;
+   color: white;
+   text-align: center;
+  
+}
+
