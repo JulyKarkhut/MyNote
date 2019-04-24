@@ -1,86 +1,61 @@
-a,
-a:visited,
-a:hover,
-a:active {
-  text-decoration: none;
-  color: inherit;
+body {
+  max-width: 980px;
+  margin: auto;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.header {
+p,
+div,
+nav,
+section,
+main {
+  margin: 5px;
+  padding: 0;
+  margin-top: 15px;
+}
 
+header {
+  display: flex;
   overflow: hidden;
   background-color: #404040;
   padding: 20px 10px;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: space-around;
 }
 
-svg {
-  position: fixed;
-  padding-left: 10px;
-  padding-right: 10px;
-
-}
-
-.header a {
+header a {
+  padding: 0;
+  list-style: none;
   color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 30px;
-  line-height: 25px;
-  border: 2px dashed white;
-  display: inline-block;
-  padding: 5px 15px;
+  font-size: 18px;
+  border: 1px dashed white;
   border-radius: 18px;
+  text-decoration: none;
+  margin-right: 12px;
 }
 
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .header-right {
-    float: none;
-  }
-}
-
-html,
-body {
-  height: 100%;
-  margin: 0;
-  background-image: url(../img/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-
-}
-
-#content {
-
-  height: 100%;
-  padding: 30px 50px;
-
-}
-
-
-.header-right {
-  float: right;
-}
-
-#header-title {
-  float: left;
+header label {
+  align-items: left;
+  font-size: 25px;
+  width: 35%;
   color: white;
-  font-size: 30px;
-  margin-left: 70px;
-  margin-top: 10px;
+  text-shadow: 5px 5px 10px black;
+  margin-top: 10px
 }
 
-h1 {
+article {
+  box-sizing: border-box;
+}
+
+article h1 {
   margin: 0;
   color: white;
   text-shadow: 5px 5px 10px black;
   text-align: center;
-  font-size: 36px;
+  font-size: 25px;
 }
 
 h2 {
@@ -88,79 +63,83 @@ h2 {
   color: white;
   text-shadow: 5px 5px 10px black;
   text-align: center;
-  font-size: 36px;
+  font-size: 25px;
 }
 
 .text-holder {
   border-radius: 32px;
   background-color: rgba(255, 255, 255, 0.75);
-  width: 46%;
-  display: inline-block;
   padding: 18px 8px;
   font-size: x-large;
   margin: 15px 15px;
 }
 
-.row {
-  display: block;
-
-}
-
-.stiker_40 {
-  width: 37%;
-}
-
-.stiker_60 {
-  width: 55%
-}
-
-.stiker_center {
-  width: 48%;
-  margin-left: 26%;
-  margin-bottom: 40px;
-}
-
-.stiker_50 {
-  width: 45%;
-  margin-top: 25px;
-  text-align: center;
-}
-
-.icon {
-  display: inline-block;
-  position: relative;
-}
-
 .icon>img {
   width: 125px;
   height: 125px;
-  position: relative;
-  top: 50px;
-  left: 50px;
-
+  margin: 0px 31%
 }
 
-.button {
+.button a {
   color: white;
-  font-size: 30px;
-  line-height: 25px;
-  border: 2px dashed white;
+  font-size: 20px;
+  border: 1px dashed white;
   padding: 10px 25px;
   border-radius: 18px;
-  position: absolute;
-  left: 50%;
-  margin-left: -50px;
   background-color: #404040;
-  margin-bottom: 100px;
+  margin: 10px 29%;
+  text-decoration: none;
+  display: grid;
+  justify-items: center;
 }
 
-  #footer {
-  position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-    background-color: #404040;
-   color: white;
-   text-align: center;
-  
+footer {
+  background-color: #404040;
+  color: white;
+  text-align: center;
+  padding: 7px;
+  margin-top: 25px;
+}
+
+@media(min-width :500px) {
+  header a {
+    padding: 0;
+    list-style: none;
+    color: white;
+    font-size: 30px;
+    border: 2px dashed white;
+    border-radius: 18px;
+    text-decoration: none;
+    margin-right: 12px;
+  }
+  .icon>img {
+    width: 125px;
+    height: 125px;
+    margin: 0px 40%
+  }
+}
+
+@media (min-width: 980px) {
+  header label {
+    font-size: 33px;
+    width: 35%;
+    color: white;
+    text-shadow: 5px 5px 10px black;
+    margin-top: 10px;
+    margin-right: 30%;
+  }
+  .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .row_flexible{
+    display: flex;
+    justify-content: center;
+  }
+  .icon-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
 }
