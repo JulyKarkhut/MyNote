@@ -99,6 +99,7 @@ footer {
   text-align: center;
   padding: 7px;
   margin-top: 25px;
+  width: 100%;
 }
 
 @media(min-width :500px) {
@@ -111,6 +112,9 @@ footer {
     border-radius: 18px;
     text-decoration: none;
     margin-right: 12px;
+  }
+  header {
+    min-width: 100%;
   }
   .icon>img {
     width: 125px;
@@ -128,16 +132,19 @@ footer {
     margin-top: 10px;
     margin-right: 30%;
   }
-  .row{
+  header {
+    min-width: 100%;
+  }
+  .row {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .row_flexible{
+  .row_flexible {
     display: flex;
     justify-content: center;
   }
-  .icon-reverse{
+  .icon-reverse {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;

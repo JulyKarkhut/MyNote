@@ -1,0 +1,20 @@
+
+.burger-menu-button,
+.cross-button {
+  background:none;
+  padding: 0 15px;
+  color:#999;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+@media(min-width:769px) {
+    .burger-menu-button, 
+    .cross-button {
+        display: none;
+    }
+}

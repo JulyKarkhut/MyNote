@@ -5,20 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/main_diary.css" type="text/css">
+    <title>Notes</title>
+    <link rel="stylesheet" href="css/main_notes.css" type="text/css">
+    <link rel="stylesheet" href="css/burger.css" type="text/css">
 </head>
 
 <body>
-    <div class="header">
-
-        <svg width="46" height="50" x="0" y="0" class="stencil--easier-to-select" style="opacity: 1;"><defs></defs><rect x="0" y="0" width="46" height="50" fill="transparent" class="stencil__selection-helper"></rect><path d="M40.888888888888886 5C40.888888888888886 5 30.206666666666663 5 30.206666666666663 5 29.133333333333333 2.1000000000000005 26.322222222222223 0 23 0 19.677777777777777 0 16.866666666666667 2.1000000000000005 15.793333333333333 5 15.793333333333333 5 5.111111111111112 5 5.111111111111112 5 2.3 5 8.881784197001252e-16 7.25 8.881784197001252e-16 10 8.881784197001252e-16 10 8.881784197001252e-16 45 8.881784197001252e-16 45 8.881784197001252e-16 47.75 2.3 50 5.111111111111112 50 5.111111111111112 50 40.888888888888886 50 40.888888888888886 50 43.7 50 46 47.75 46 45 46 45 46 10 46 10 46 7.25 43.7 5 40.888888888888886 5 40.888888888888886 5 40.888888888888886 5 40.888888888888886 5M23 5C24.40555555555556 5 25.555555555555557 6.125 25.555555555555557 7.5 25.555555555555557 8.875 24.40555555555556 10 23 10 21.59444444444444 10 20.444444444444443 8.875 20.444444444444443 7.5 20.444444444444443 6.125 21.59444444444444 5 23 5 23 5 23 5 23 5M17.88888888888889 40C17.88888888888889 40 7.666666666666667 30 7.666666666666667 30 7.666666666666667 30 11.27 26.475 11.27 26.475 11.27 26.475 17.88888888888889 32.925 17.88888888888889 32.925 17.88888888888889 32.925 34.73 16.45 34.73 16.45 34.73 16.45 38.333333333333336 20 38.333333333333336 20 38.333333333333336 20 17.88888888888889 40 17.88888888888889 40 17.88888888888889 40 17.88888888888889 40 17.88888888888889 40" stroke-width="0" stroke="none" stroke-dasharray="none" fill="rgb(230, 230, 230)" fill-rule="evenOdd"></path></svg>
-        <label>MyNote</label>
+    <header>
+        <div class="header-left">
+            <svg width="46" height="50" x="0" y="0" class="stencil--easier-to-select" style="opacity: 1;"><defs></defs><rect x="0" y="0" width="46" height="50" fill="transparent" class="stencil__selection-helper"></rect><path d="M40.888888888888886 5C40.888888888888886 5 30.206666666666663 5 30.206666666666663 5 29.133333333333333 2.1000000000000005 26.322222222222223 0 23 0 19.677777777777777 0 16.866666666666667 2.1000000000000005 15.793333333333333 5 15.793333333333333 5 5.111111111111112 5 5.111111111111112 5 2.3 5 8.881784197001252e-16 7.25 8.881784197001252e-16 10 8.881784197001252e-16 10 8.881784197001252e-16 45 8.881784197001252e-16 45 8.881784197001252e-16 47.75 2.3 50 5.111111111111112 50 5.111111111111112 50 40.888888888888886 50 40.888888888888886 50 43.7 50 46 47.75 46 45 46 45 46 10 46 10 46 7.25 43.7 5 40.888888888888886 5 40.888888888888886 5 40.888888888888886 5 40.888888888888886 5M23 5C24.40555555555556 5 25.555555555555557 6.125 25.555555555555557 7.5 25.555555555555557 8.875 24.40555555555556 10 23 10 21.59444444444444 10 20.444444444444443 8.875 20.444444444444443 7.5 20.444444444444443 6.125 21.59444444444444 5 23 5 23 5 23 5 23 5M17.88888888888889 40C17.88888888888889 40 7.666666666666667 30 7.666666666666667 30 7.666666666666667 30 11.27 26.475 11.27 26.475 11.27 26.475 17.88888888888889 32.925 17.88888888888889 32.925 17.88888888888889 32.925 34.73 16.45 34.73 16.45 34.73 16.45 38.333333333333336 20 38.333333333333336 20 38.333333333333336 20 17.88888888888889 40 17.88888888888889 40 17.88888888888889 40 17.88888888888889 40 17.88888888888889 40" stroke-width="0" stroke="none" stroke-dasharray="none" fill="rgb(230, 230, 230)" fill-rule="evenOdd"></path></svg>
+            <label>MyNote</label> </div>
         <div class="header-right">
             <div class="username">Username</div>
             <a href="index.html">Log out</a>
+            <div id="burger-menu">
+                <button class="burger-menu-button">&#9776;</button>
+                <button class="cross-button">&#10005;</button>
+            </div>
         </div>
-    </div>
+
+    </header>
+    <div class="line-break" />
     <div class="content">
         <div class="vertical-menu">
             <a href="main_notes.html">Notes</a>
@@ -26,27 +33,28 @@
             <a href="main_shopping.html">Shopping list</a>
             <a href="main_todo.html">To-Do list</a>
             <a href="main_mood.html">Mood diary</a>
-            <span class="block"></span>
         </div>
         <div class="main_block">
             <div class="row">
+                 <p>All diaries</p>
                 <input type="search" name="search" placeholder="search" class="search">
                 <a href="main_notes.html" class="add_note">Add new diary</a>
             </div>
-
-            <div class="row">
-                <textarea name="note" class="textarea"></textarea>
-                <textarea name="note" class="textarea_mini"></textarea>
-                <textarea name="note" class="textarea_mini"></textarea>
-
-            </div>
+            <textarea name="note" class="textarea"></textarea>
+            <textarea name="note" class="textarea_mini"></textarea>
+            <textarea name="note" class="textarea_mini"></textarea>
+            <textarea name="note" class="textarea_mini"></textarea>
         </div>
     </div>
-
-
-    <div id="footer">
-        <p>Created by JulyKarkhut 2019</p>
     </div>
+    
+    <footer>
+        <p>Created by JulyKarkhut 2019</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main_notes.js"></script>
+    <script type="text/javascript" src="js/burger.js"></script>
 </body>
 
 </html>

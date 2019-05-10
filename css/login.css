@@ -1,113 +1,144 @@
+body {
+    max-width: 980px;
+    margin: auto;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    display: grid;
 
-a,
-a:visited,
-a:hover,
-a:active {
+}
+
+p,
+div,
+nav,
+section,
+main {
+    margin: 5px;
+    padding: 0;
+    margin-top: 15px;
+}
+
+header {
+    display: flex;
+    overflow: hidden;
+    background-color: #404040;
+    padding: 10px 10px;
+   
+}
+
+header a {
+    padding: 0;
+    list-style: none;
+    color: white;
+    font-size: 18px;
+    border: 1px dashed white;
+    border-radius: 18px;
     text-decoration: none;
-    color: inherit;
+    margin-right: 12px;
 }
 
-#header-title {
-  float: left;
-  color: white;
-  font-size: 30px;
-  margin-left: 70px;
-  margin-top: 10px;
+header label {
+
+    font-size: 25px;
+    width: 35%;
+    color: white;
+    text-shadow: 5px 5px 10px black;
+    margin-top: 10px;
+    flex-grow: 10;
+    margin-left: 10px;
 }
 
-svg {
-    position: fixed;
-    padding-left: 10px;
-    padding-right: 10px;
-
+article {
+    box-sizing: border-box;
 }
 
-h1 {
-    margin: 20px;
+article h1 {
+    margin: 0;
     color: white;
     text-shadow: 5px 5px 10px black;
     text-align: center;
-    font-size: 36px;
+    font-size: 25px;
 }
 
-
-html,
-body {
-    height: 100%;
+h2 {
     margin: 0;
-    background-image: url(../img/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-
+    color: white;
+    text-shadow: 5px 5px 10px black;
+    text-align: center;
+    font-size: 25px;
 }
 
-.header {
+.text-holder {
+    border-radius: 32px;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 18px 8px;
+    font-size: x-large;
+    margin: 15px 15px;
+}
 
-    overflow: hidden;
+.icon>img {
+    width: 125px;
+    height: 125px;
+    margin: 0px 31%
+}
+
+header svg {
+    flex-grow: 1;
+}
+
+footer {
     background-color: #404040;
-    padding: 20px 10px;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    margin-top: 25px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
 }
 
 .form {
-    text-shadow: 5px 5px 10px black;
-    width: 40%;
-    padding: 12px 20px;
-    margin: 28px 25px;
-    margin-left: 30%;
-    display: inline-block;
-    box-sizing: border-box;
-    font-size: x-large;
-    text-align: center;
-}
-
-.textfield {
-    width: 60%;
-    height: 50px;
-    border-radius: 18px;
-    background-color: rgba(255, 255, 255, 0.75);
-    float: right;
-}
-
-.form-buttons {
-    float: none;
-    line-height: 25px;
-    padding: 10px 25px;
-    margin: 10px;
-    height: 40px;
-    text-align: center;
-    display: inline-block;
-    margin-top: 60px;
-}
-
-.button {
-    color: white;
-    font-size: 30px;
-    line-height: 25px;
-    border: 2px dashed white;
-    padding: 10px 25px;
-    border-radius: 18px;
-    margin: 10px;
-    background-color: #404040;
-    display: inline-block;
-    
+    display: grid;
 }
 
 .form-label {
+    display: flex;
+    justify-content: center;
     color: white;
-    font-size: 30px;
-    margin-top: 10px;
+    text-shadow: 5px 5px 10px black;
+
 }
 
- #footer {
-  position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
+.textfield {
+    margin-left: 15px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+}
+
+.form a {
+    color: white;
+    border: 1px dashed white;
+    border-radius: 18px;
     background-color: #404040;
-   color: white;
-   text-align: center;
-  
+    display: grid;
+    padding: 12px;
+    font-size: medium;
+    width: 30%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+.inputPlace {
+    display: grid;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
 }
 
