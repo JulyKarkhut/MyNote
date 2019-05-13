@@ -1,11 +1,6 @@
 body {
     max-width: 980px;
     margin: auto;
-    background-image: url(../img/background.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100%;
-    display: grid;
 
 }
 
@@ -20,15 +15,34 @@ main {
 }
 
 header {
+    padding-top: 10px;
+    width: 100%;
+    height: 150px;
+    background-color: #442244;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header .my-note-title,
+header .my-note-desc {
+    justify-content: center;
     display: flex;
-    overflow: hidden;
-    background-color: #404040;
-    padding: 10px 10px;
-   
+}
+
+.my-note-desc {
+    margin: 5px;
+    font-family: 'Gugi', cursive;
+    color: white
+}
+
+header p {
+    font-family: 'Gugi', cursive;
+    color: white
 }
 
 header a {
-    padding: 0;
+    padding: 7px;
     list-style: none;
     color: white;
     font-size: 18px;
@@ -39,14 +53,12 @@ header a {
 }
 
 header label {
-
+    align-items: left;
     font-size: 25px;
-    width: 35%;
-    color: white;
     text-shadow: 5px 5px 10px black;
     margin-top: 10px;
-    flex-grow: 10;
-    margin-left: 10px;
+    font-family: 'Gugi', cursive;
+    color: white
 }
 
 article {
@@ -55,7 +67,7 @@ article {
 
 article h1 {
     margin: 0;
-    color: white;
+    color: #442244;
     text-shadow: 5px 5px 10px black;
     text-align: center;
     font-size: 25px;
@@ -88,17 +100,17 @@ header svg {
 }
 
 footer {
-    background-color: #404040;
+    background-color: #442244;
     color: white;
-    text-align: center;
-    padding: 7px;
+    padding: 7px 0px;
     margin-top: 25px;
-    position: fixed;
-    right: 0;
+    width: 100%;
+    font-family: 'Gugi', cursive;
+    display: flex;
+    justify-content: center;
+    position: absolute;
     bottom: 0;
-    left: 0;
-    padding: 1rem;
-    text-align: center;
+    max-width: 980px;
 }
 
 .form {
@@ -108,7 +120,7 @@ footer {
 .form-label {
     display: flex;
     justify-content: center;
-    color: white;
+    color: #442244;
     text-shadow: 5px 5px 10px black;
 
 }
@@ -121,15 +133,15 @@ footer {
 
 .form a {
     color: white;
+    font-size: 20px;
     border: 1px dashed white;
+    padding: 10px 25px;
     border-radius: 18px;
-    background-color: #404040;
+    background-color: #442244;
+    text-decoration: none;
     display: grid;
-    padding: 12px;
-    font-size: medium;
-    width: 30%;
-    margin-left: 5%;
-    text-align: center;
+    justify-items: center;
+    font-family: 'Gugi', cursive;
 }
 
 .inputPlace {
@@ -141,4 +153,3 @@ footer {
     justify-content: center;
     margin-top: 35px;
 }
-

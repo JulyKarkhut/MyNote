@@ -5,43 +5,50 @@
 body {
     max-width: 980px;
     margin: auto;
-    background-image: url(../img/background.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-flow: row wrap;
+
 }
 
 header {
+    padding-top: 10px;
+    width: 100%;
+    height: 150px;
+    background-color: #442244;
     display: flex;
-    align-items: center;
     justify-content: space-between;
 
-    overflow: hidden;
-    background-color: #404040;
-    padding: 20px 10px;
-    width: 100%;
+}
 
+header p {
+    margin-left: 17%;
+    font-family: 'Gugi', cursive;
+    color: white
 }
 
 header a {
+    padding: 7px;
+    list-style: none;
     color: white;
-    font-size: 18px;
+    font-size: 26px;
     border: 1px dashed white;
     border-radius: 18px;
     text-decoration: none;
+    margin-right: 12px;
     display: none;
-    padding: 10px;
-    margin: 0 10px;
+    font-family: 'Gugi', cursive;
 }
 
-header label {
-    align-items: left;
-    font-size: 25px;
-    width: 35%;
+header img{
+        margin: 10px;
+
+}
+.site_name {
+    text-decoration: none;
+    border: none;
     color: white;
-    text-shadow: 5px 5px 10px black;
-    margin: 0 10px;
+    font-size: 18px;
+    background: none;
+    border: none;
+
 }
 
 article {
@@ -50,26 +57,38 @@ article {
 
 article h1 {
     margin: 0;
-    color: white;
     text-shadow: 5px 5px 10px black;
     text-align: center;
     font-size: 25px;
+    font-family: 'Gugi', cursive;
+    margin-top: 20px;
+    color: #442244;
 }
 
 h2 {
     margin: 0;
-    color: white;
+    color: #442244;
     text-shadow: 5px 5px 10px black;
     text-align: center;
     font-size: 25px;
 }
 
-.text-holder {
+.new_note_block {
     border-radius: 32px;
     background-color: rgba(255, 255, 255, 0.75);
     padding: 18px 8px;
     font-size: x-large;
     margin: 15px 15px;
+    display: grid;
+}
+
+.text-holder {
+    padding: 18px 8px;
+    font-size: x-large;
+    margin: 15px 15px;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    background-color: #e3cdff;
 }
 
 .icon>img {
@@ -84,17 +103,18 @@ h2 {
     border: 1px dashed white;
     padding: 10px 25px;
     border-radius: 18px;
-    background-color: #404040;
+    background-color: #442244;
     margin: 10px 29%;
     text-decoration: none;
     display: grid;
     justify-items: center;
+    font-family: 'Gugi', cursive;
 }
 
 label {
     color: white;
     font-size: 30px;
-
+    font-family: 'Gugi', cursive;
 }
 
 .username {
@@ -141,7 +161,9 @@ label {
         display: inline-block;
     }
     .username {
-        font-size: 25px;
+        font-size: 26px;
+        margin: 10px;
+        font-family: 'Gugi', cursive;
     }
 
     header a {
@@ -155,8 +177,42 @@ label {
     }
 }
 
+.title_text_area {
+    padding: 18px 8px;
+    font-family: 'Indie Flower', cursive;
+    border-radius: 10px;
+    resize: none;
+    border: none;
+    border-bottom-width: thin;
+    border-bottom-style: inset;
+    font-family: 'Indie Flower', cursive;
+}
+
+.text_text_area {
+
+    border-radius: 10px;
+    resize: none;
+    border: none;
+    margin-top: 15px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.main_text_area {
+    display: grid;
+    margin: 30px;
+    border-radius: 10px;
+    padding: 15px 20px;
+    border-bottom-style: outset;
+    border-bottom-width: initial;
+    border-bottom-color: blueviolet;
+    border-top-style: outset;
+    border-top-width: initial;
+    border-top-color: blueviolet;
+}
+
 .header-right {
     display: flex;
+
     align-items: center;
     justify-content: space-around;
 }
@@ -167,9 +223,6 @@ label {
     justify-content: flex-start;
 }
 
-
-
-
 .main_block {
     display: inline-block;
     padding: 5px 5px 20px 5px;
@@ -178,20 +231,21 @@ label {
 }
 
 .vertical-menu a {
-    background-color: #404040;
+    background-color: #442244;
     color: white;
     display: block;
     padding: 12px;
     text-decoration: none;
     font-size: large;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .vertical-menu a:hover {
-    background-color: #767676;
+    background-color: #ccaabb;
 }
 
 .vertical-menu a.active {
-    background-color: #838383;
+    background-color: #aa7799;
     color: white;
 }
 
@@ -205,7 +259,8 @@ label {
 .search {
     border-radius: 18px;
     background-color: rgba(255, 255, 255, 0.75);
-    width: 35%;
+    width: 51%;
+    margin-left: -35px;
 }
 
 .add_note {
@@ -213,7 +268,12 @@ label {
     color: white;
     font-size: 20px;
     display: inline-flex;
-
+    border-radius: 18px;
+    background-color: #442244;
+    margin: 16px;
+    width: 58%;
+    justify-content: center;
+    font-family: 'Gugi', cursive;
 }
 
 .textarea {
@@ -233,12 +293,14 @@ label {
 }
 
 footer {
-    background-color: #404040;
+    background-color: #442244;
     color: white;
-    text-align: center;
-    padding: 7px;
+    padding: 7px 0px;
     margin-top: 25px;
     width: 100%;
+    font-family: 'Gugi', cursive;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    max-width: 980px;
 }
-
-

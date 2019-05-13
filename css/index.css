@@ -1,77 +1,77 @@
 body {
   max-width: 980px;
   margin: auto;
-  background-image: url(../img/background.jpg);
-  background-size: cover;
-  background-attachment: fixed;
+
 }
 
-p,
-div,
-nav,
-section,
-main {
-  margin: 5px;
-  padding: 0;
-  margin-top: 15px;
-}
 
 header {
-  display: flex;
-  overflow: hidden;
-  background-color: #404040;
-  padding: 20px 10px;
+  padding-top: 10px;
   width: 100%;
-  flex-wrap: nowrap;
-  justify-content: space-around;
+  height: 150px;
+  background-color: #442244;
 }
 
-header a {
-  padding: 0;
-  list-style: none;
-  color: white;
-  font-size: 18px;
-  border: 1px dashed white;
-  border-radius: 18px;
-  text-decoration: none;
-  margin-right: 12px;
+header .my-note-title,
+header .my-note-desc {
+  justify-content: center;
+  display: flex;
+  padding: 10px;
 }
 
 header label {
   align-items: left;
   font-size: 25px;
-  width: 35%;
-  color: white;
   text-shadow: 5px 5px 10px black;
-  margin-top: 10px
+  margin-top: 10px;
+  font-family: 'Gugi', cursive;
+  color: white
+}
+
+.my-note-desc {
+  margin: 5px;
+  font-family: 'Gugi', cursive;
+  color: white
 }
 
 article {
   box-sizing: border-box;
 }
 
+.advantages h2 {
+  color: #442244;
+  font-family: 'Gugi', cursive;
+}
+
+.row {
+  display: block;
+}
+
 article h1 {
   margin: 0;
-  color: white;
   text-shadow: 5px 5px 10px black;
   text-align: center;
   font-size: 25px;
+  font-family: 'Gugi', cursive;
+  margin-top: 20px;
+  color: #442244;
 }
 
 h2 {
   margin: 0;
-  color: white;
+  color: #630650;
   text-shadow: 5px 5px 10px black;
   text-align: center;
   font-size: 25px;
 }
 
 .text-holder {
-  border-radius: 32px;
-  background-color: rgba(255, 255, 255, 0.75);
   padding: 18px 8px;
   font-size: x-large;
   margin: 15px 15px;
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  background-color: #e3cdff;
 }
 
 .icon>img {
@@ -86,20 +86,25 @@ h2 {
   border: 1px dashed white;
   padding: 10px 25px;
   border-radius: 18px;
-  background-color: #404040;
+  background-color: #442244;
   margin: 10px 29%;
   text-decoration: none;
   display: grid;
   justify-items: center;
+  font-family: 'Gugi', cursive;
 }
 
 footer {
-  background-color: #404040;
-  color: white;
-  text-align: center;
-  padding: 7px;
-  margin-top: 25px;
-  width: 100%;
+   background-color: #442244;
+    color: white;
+    padding: 7px 0px;
+    margin-top: 25px;
+    width: 100%;
+    font-family: 'Gugi', cursive;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    max-width: 980px;
 }
 
 @media(min-width :500px) {
@@ -126,11 +131,8 @@ footer {
 @media (min-width: 980px) {
   header label {
     font-size: 33px;
-    width: 35%;
     color: white;
     text-shadow: 5px 5px 10px black;
-    margin-top: 10px;
-    margin-right: 30%;
   }
   header {
     min-width: 100%;
@@ -139,6 +141,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-content: center;
   }
   .row_flexible {
     display: flex;
