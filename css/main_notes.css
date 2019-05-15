@@ -37,10 +37,11 @@ header a {
     font-family: 'Gugi', cursive;
 }
 
-header img{
-        margin: 10px;
+header img {
+    margin: 10px;
 
 }
+
 .site_name {
     text-decoration: none;
     border: none;
@@ -80,6 +81,25 @@ h2 {
     font-size: x-large;
     margin: 15px 15px;
     display: grid;
+}
+
+.new_note_block input {
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.new_note_block .save_note {
+    text-shadow: 5px 5px 10px black;
+    color: white;
+    font-size: 20px;
+    display: inline-flex;
+    border-radius: 18px;
+    background-color: #442244;
+    margin: 5px;
+    width: 58%;
+    justify-self: center;
+    font-family: 'Gugi', cursive;
+    justify-content: center;
 }
 
 .text-holder {
@@ -126,8 +146,7 @@ label {
 .row {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 97%;
+    justify-content: center;
 }
 
 .row p {
@@ -183,9 +202,9 @@ label {
     border-radius: 10px;
     resize: none;
     border: none;
+    font-size: 20px;
     border-bottom-width: thin;
     border-bottom-style: inset;
-    font-family: 'Indie Flower', cursive;
 }
 
 .text_text_area {
@@ -194,6 +213,7 @@ label {
     resize: none;
     border: none;
     margin-top: 15px;
+    font-size: 18px;
     font-family: 'Indie Flower', cursive;
 }
 
@@ -225,7 +245,7 @@ label {
 
 .main_block {
     display: inline-block;
-    padding: 5px 5px 20px 5px;
+    padding: 5px 0 20px 0;
     width: 100%;
 
 }
@@ -301,6 +321,5 @@ footer {
     font-family: 'Gugi', cursive;
     display: flex;
     justify-content: center;
-    position: absolute;
     max-width: 980px;
 }

@@ -10,7 +10,7 @@
   cursor:pointer;
   outline:none;
   z-index:10000000000000;
-      padding: 35px;
+      /*padding: 35px;*/
 }
 
 @media(min-width:769px) {

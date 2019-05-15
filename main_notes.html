@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Diary</title>
+    <title>Notes</title>
     <link rel="stylesheet" href="css/main_notes.css" type="text/css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/burger.css" type="text/css">
@@ -15,7 +15,7 @@
 <body>
     <header>
         <div class="header-left">
-            <img src="img/notepad.png" width="46" height="50" </img>
+            <img src="img/notepad.png" width="46" height="50" alt='title-image' />
             <label onclick="window.location.href='index.html'">MyNote</label>
             <div>
                 <!--<p> All your notes in one place </p>-->
@@ -30,28 +30,27 @@
             </div>
         </div>
     </header>
-    <div class="line-break" />
+    <div class="line-break"></div>
     <div class="content">
         <div class="vertical-menu">
             <a href="main_notes.html" class="active">Notes</a>
             <a href="main_diary.html">Diary</a>
             <a href="main_shopping.html">Shopping list</a>
             <a href="main_todo.html">To-Do list</a>
-            <a href="main_mood.html">Mood diary</a>
+
         </div>
         <div class="main_block">
             <div class="row">
-                <p>All notes</p>
-                <input type="search" name="search" placeholder="search" class="search">
                 <button class="add_note">Add new note</button>
             </div>
             <div class="new_note_block">
                 <input type="text" name="note_name" />
-                <input type='textarea' name="note_text" />
+                <input type='text' name="note_text" />
                 <button class="save_note">Save</button>
             </div>
+
+            <div class="note_list"></div>
         </div>
-    </div>
     </div>
     <footer>
         <p>Created by JulyKarkhut 2019</p>

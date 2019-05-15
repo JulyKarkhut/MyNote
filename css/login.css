@@ -21,6 +21,7 @@ header {
     background-color: #442244;
     justify-content: center;
     align-items: center;
+    padding-right: 9px;
 
 }
 
@@ -53,7 +54,6 @@ header a {
 }
 
 header label {
-    align-items: left;
     font-size: 25px;
     text-shadow: 5px 5px 10px black;
     margin-top: 10px;
@@ -108,7 +108,7 @@ footer {
     font-family: 'Gugi', cursive;
     display: flex;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     max-width: 980px;
 }

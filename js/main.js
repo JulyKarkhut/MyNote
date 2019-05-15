@@ -34,23 +34,16 @@ function save_note(e) {
     const note_name = document.querySelector('.new_note_block input[name=note_name]');
     const note_text = document.querySelector('.new_note_block input[name=note_text]');
     let user_login = localStorage['current_user'];
-
     let note_name_key = user_login + '_note_name_' + note_name.value;
     let note_text_key = user_login + '_note_text_' + note_name.value;
-
     localStorage[note_name_key] = '' + note_name.value;
     localStorage[note_text_key] = '' + note_text.value;
-
     $(".new_note_block").hide();
-
     let note_name_value = localStorage[note_name_key];
     let note_text_value = localStorage[note_text_key];
-
     addNoteOnPage(note_name_value, note_text_value);
-
     $('.new_note_block').find("input[type=textarea], textarea").val("");
     $('.new_note_block').find("input[type=textarea], textarea").val("");
-
     let user_notes_keys = localStorage[user_login + '_notes'];
     if (user_notes_keys == undefined) {
         user_notes_keys = note_name_key;
@@ -62,7 +55,7 @@ function save_note(e) {
 }
 
 function addNoteOnPage(name, text) {
-    var main_block = document.querySelector(".main_block");
+    var note_list = document.querySelector(".note_list");
     var main_textfield = document.createElement("div");
     main_textfield.setAttribute("class", "main_text_area");
     var title = document.createElement("textarea");
@@ -73,7 +66,7 @@ function addNoteOnPage(name, text) {
     input.value = text;
     main_textfield.appendChild(title);
     main_textfield.appendChild(input);
-    main_block.appendChild(main_textfield);
+    note_list.prepend(main_textfield);
 }
 
 // $('input').hide();
